@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.submitDiv{
+  background-color: #fcd80b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.submitDiv textarea{
+  height: 60%;
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 5px 20px;
+}
+
+.submitDiv form button{
+  margin-top: 20px;
+  margin-left: 35%;
+  background-color: #0b073b;
+  color: antiquewhite;
+  padding: 10px 40px;
+  font-size: 30px;
+  font-weight: 500;
+  border-radius: 7px;
+  border: none;
+  letter-spacing: 1.5px;
+} 
