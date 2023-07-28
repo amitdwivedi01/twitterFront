@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 require("dotenv").config({ path: __dirname + "/.env" });
 const { twitterClient } = require("./twitterClient");
-const path = require("path");
+// const path = require("path");
 
 const app = express();
 app.use(cors());
@@ -13,12 +13,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(path)
 
 
-app.use(express.static(path.join(__dirname, "client")));
+// app.use(express.static(path.join(__dirname, "client")));
 
-// Route to serve the React app
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "public", "index.html"));
-});
+// // Route to serve the React app
+// app.get("/", (req, res) => {
+//   res.sendFile(path.join(__dirname, "client", "public", "index.html"));
+// });
 
 const mongoURI =
   "mongodb+srv://cakeAdmin:jagdish@whatsappnum.ibg6wr3.mongodb.net/?retryWrites=true&w=majority";
