@@ -7,13 +7,14 @@ import axios from "axios";
 const host = "http://localhost:4000";
 
 const initialUserInput = {
+  name: "",
   companyName: "",
   designation: "",
   email: "",
   phone: "",
 };
 
-const Userdata = () => {
+const Userdata = (props) => {
   const [userInput, setUserInput] = useState(initialUserInput);
 
   const navigate = useNavigate();
@@ -23,12 +24,19 @@ const Userdata = () => {
     navigate("/usercheck");
     console.log(userInput)
 
+    props.userData({email: userInput["email"], name: userInput["name"]});
+
     try{
       await axios.post(`${host}/api/user`, userInput);
     } catch (error) {
       console.log(error);
     }
   };
+
+  const changepage = () => {
+    navigate("/");
+  }
+
 
   const inputChangeHandler = (input, value) => {
     setUserInput((prevState) => {
@@ -38,9 +46,22 @@ const Userdata = () => {
 
   return (
     <div className={styles.userform}>
+      <div className={styles.logodiv} onClick={changepage}>
+
+      </div>
       <form action="" onSubmit={handleclick} className={styles.userform__form}>
         <div>
           <label htmlFor="" />
+        </div>
+        <div>
+          <label htmlFor="">Name</label>
+          <input
+            type="text"
+            id="name"
+            value={userInput["name"]}
+            onChange={(e) => inputChangeHandler("name", e.target.value)}
+            required
+          />
         </div>
         <div>
           <label htmlFor="">Company Name</label>
@@ -49,6 +70,7 @@ const Userdata = () => {
             id="companyName"
             value={userInput["companyName"]}
             onChange={(e) => inputChangeHandler("companyName", e.target.value)}
+            required
           />
         </div>
         <div>
@@ -58,6 +80,7 @@ const Userdata = () => {
             id="designation"
             value={userInput["designation"]}
             onChange={(e) => inputChangeHandler("designation", e.target.value)}
+            required
           />
         </div>
         <div>
@@ -67,6 +90,7 @@ const Userdata = () => {
             id="email"
             value={userInput["email"]}
             onChange={(e) => inputChangeHandler("email", e.target.value)}
+            required
           />
         </div>
         <div>

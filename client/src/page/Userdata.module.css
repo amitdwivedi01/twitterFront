@@ -9,6 +9,19 @@
     align-items: center;
 }
 
+.logodiv{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 16%;
+    height: 19%;
+    /* background: rgba(255, 0, 0, 0.441); */
+}
+
+.logodiv:hover{
+    cursor: pointer;
+}
+
 .userform__form{
     display: flex;
     flex-direction: column;
@@ -32,7 +45,8 @@ label{
     margin-bottom: 10px;
     border: none;
     outline: none;
-    height: 25px;
+    height: 28px;
+    padding: 0 10px;
 }
 
 .userform__form_btn{
