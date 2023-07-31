@@ -3,17 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "myfont";
+  src: url("./assests/Font/Sodexo/WOFF/TTTravelsWOFF/TT_Travels_Bold.woff") format('woff');
+}
+
+code {
+  font-family: myfont;
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: myfont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

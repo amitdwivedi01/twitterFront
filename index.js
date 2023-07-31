@@ -4,24 +4,15 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 require("dotenv").config({ path: __dirname + "/.env" });
 const { twitterClient } = require("./twitterClient");
-// const path = require("path");
+const path = require("path");
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(path)
-
-
-// app.use(express.static(path.join(__dirname, "client")));
-
-// // Route to serve the React app
-// app.get("/", (req, res) => {
-//   res.sendFile(path.join(__dirname, "client", "public", "index.html"));
-// });
 
 const mongoURI =
-  "mongodb+srv://cakeAdmin:jagdish@whatsappnum.ibg6wr3.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://admin:admin456123@cluster0.mnvp6el.mongodb.net/?retryWrites=true&w=majority";
 mongoose
   .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("DB connected"))
@@ -103,7 +94,9 @@ app.post("/submitFeedback", (req, res) => {
   // Send a tweet using the Twitter API
   const tweet = async () => {
     try {
-      await twitterClient.v2.tweet(`congrolutions @${feedback}`);
+      await twitterClient.v2.tweet(
+        `Congratulation @${feedback}  for playing the Pluxee PowerPlay at @TechHR 2023.`
+      );
     } catch (e) {
       console.log(e);
     }

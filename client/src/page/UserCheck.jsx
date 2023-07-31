@@ -12,7 +12,10 @@ import uniform from "../assests/office.png";
 import learn from "../assests/learning.png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-const host = "http://localhost:4000";
+import Header from "../component/Header";
+import Footer from "../component/Footer";
+const host = "https://gold-cricket-garb.cyclic.app";
+// const host = "http://localhost:4000";
 
 const UserCheck = (props) => {
   const [selectedItems, setSelectedItems] = useState({
@@ -59,8 +62,10 @@ const UserCheck = (props) => {
   };
   return (
     <div className={styles.UserCheck}>
+      <Header />
+      <Footer />
       <div className={styles.logodiv} onClick={changepage}></div>
-      <div className={styles.UserCheck__title} style={{ marginBottom: "50px" }}>
+      <div className={styles.UserCheck__title} style={{ marginBottom: "20px" }}>
         <h2>WHAT ALL BENEFITS YOUR COMPANY IS PROVIDING?</h2>
       </div>
       <form className={styles.usercheck__frm}>
@@ -75,7 +80,7 @@ const UserCheck = (props) => {
               value={selectedItems["meal"]}
               onChange={(e) => inputChangeHandler("meal", e.target.checked)}
             />
-            <img src={meal} alt="" width="150" />
+            <img src={meal} alt="" className={styles.timg} />
           </div>
           <div className={styles.checkbox_div}>
             <input
@@ -84,7 +89,7 @@ const UserCheck = (props) => {
               value={selectedItems["reward"]}
               onChange={(e) => inputChangeHandler("reward", e.target.checked)}
             />
-            <img src={reward} alt="" width="150" />
+            <img src={reward} alt="" className={styles.timg} />
           </div>
           <div className={styles.checkbox_div}>
             <input
@@ -93,7 +98,7 @@ const UserCheck = (props) => {
               value={selectedItems["fuel"]}
               onChange={(e) => inputChangeHandler("fuel", e.target.checked)}
             />
-            <img src={fuel} alt="" width="150" />
+            <img src={fuel} alt="" className={styles.timg} />
           </div>
           <div className={styles.checkbox_div}>
             <input
@@ -102,7 +107,7 @@ const UserCheck = (props) => {
               value={selectedItems["health"]}
               onChange={(e) => inputChangeHandler("health", e.target.checked)}
             />
-            <img src={health} alt="" width="150" />
+            <img src={health} alt="" className={styles.timg} />
           </div>
           <div className={styles.checkbox_div}>
             <input
@@ -111,18 +116,21 @@ const UserCheck = (props) => {
               value={selectedItems["telecom"]}
               onChange={(e) => inputChangeHandler("telecom", e.target.checked)}
             />
-            <img src={telecom} alt="" width="150" />
+            <img src={telecom} alt="" className={styles.timg} />
           </div>
         </div>
-        <div className={styles.usercheck__form}>
-          <div className={styles.checkbox_div} style={{ marginBottom: "40px" }}>
+        <div
+          className={styles.usercheck__form}
+          style={{ marginBottom: "40px" }}
+        >
+          <div className={styles.checkbox_div}>
             <input
               type="checkbox"
               id="leave"
               value={selectedItems["leave"]}
               onChange={(e) => inputChangeHandler("leave", e.target.checked)}
             />
-            <img src={leave} alt="" width="150" />
+            <img src={leave} alt="" className={styles.timg} />
           </div>
           <div className={styles.checkbox_div}>
             <input
@@ -131,7 +139,7 @@ const UserCheck = (props) => {
               value={selectedItems["gadget"]}
               onChange={(e) => inputChangeHandler("gadget", e.target.checked)}
             />
-            <img src={gadget} alt="" width="150" />
+            <img src={gadget} alt="" className={styles.timg} />
           </div>
           <div className={styles.checkbox_div}>
             <input
@@ -140,7 +148,7 @@ const UserCheck = (props) => {
               value={selectedItems["drive"]}
               onChange={(e) => inputChangeHandler("drive", e.target.checked)}
             />
-            <img src={drive} alt="" width="150" />
+            <img src={drive} alt="" className={styles.timg} />
           </div>
           <div className={styles.checkbox_div}>
             <input
@@ -149,7 +157,7 @@ const UserCheck = (props) => {
               value={selectedItems["uniform"]}
               onChange={(e) => inputChangeHandler("uniform", e.target.checked)}
             />
-            <img src={uniform} alt="" width="150" />
+            <img src={uniform} alt="" className={styles.timg} />
           </div>
           <div className={styles.checkbox_div}>
             <input
@@ -158,10 +166,10 @@ const UserCheck = (props) => {
               value={selectedItems["learn"]}
               onChange={(e) => inputChangeHandler("learn", e.target.checked)}
             />
-            <img src={learn} alt="" width="150" />
+            <img src={learn} alt="" className={styles.timg} />
           </div>
         </div>
-        <div className={styles.checkbox_div} style={{ marginTop: "20px" }}>
+        <div className={styles.checkbox_div} >
           <input
             type="checkbox"
             id="other"

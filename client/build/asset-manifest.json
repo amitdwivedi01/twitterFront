@@ -1,24 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.99cd8c7e.css",
-    "main.js": "/static/js/main.c76e2bbc.js",
-    "static/media/Ipad size.png": "/static/media/Ipad size.a6e7ad51d94352590a7e.png",
+    "main.css": "/static/css/main.8fbefcdf.css",
+    "main.js": "/static/js/main.83c5fabe.js",
     "static/media/png-03.png": "/static/media/png-03.5e01fd8ee3823d4111ce.png",
-    "static/media/telecom.png": "/static/media/telecom.8eea39fa84ae53e660be.png",
-    "static/media/learning.png": "/static/media/learning.3925a4c67d7b17eda44f.png",
-    "static/media/leave.png": "/static/media/leave.f15b5d01d92a289b835e.png",
-    "static/media/health.png": "/static/media/health.f04e78aeaa8789dee6e3.png",
-    "static/media/gadgets.png": "/static/media/gadgets.6d280eddcda5616fa8a4.png",
-    "static/media/meal.png": "/static/media/meal.cd3060eb77f5709ddb1d.png",
-    "static/media/driver.png": "/static/media/driver.05f988a2512c02f4673a.png",
-    "static/media/office.png": "/static/media/office.0e870690cedd08e8fc63.png",
-    "static/media/reward.png": "/static/media/reward.51ea1ad007f63755a164.png",
+    "static/media/TT_Travels_Bold.woff": "/static/media/TT_Travels_Bold.6bc6555a6955e0365673.woff",
+    "static/media/footerl.png": "/static/media/footerl.2d384ff206f0dd0d9f3c.png",
+    "static/media/logoright.png": "/static/media/logoright.f2917dec8beda5d98f07.png",
+    "static/media/footerr.png": "/static/media/footerr.e2661254cb8b9841cb47.png",
+    "static/media/logo.png": "/static/media/logo.b12ed3e03f685401a002.png",
     "index.html": "/index.html",
-    "main.99cd8c7e.css.map": "/static/css/main.99cd8c7e.css.map",
-    "main.c76e2bbc.js.map": "/static/js/main.c76e2bbc.js.map"
+    "main.8fbefcdf.css.map": "/static/css/main.8fbefcdf.css.map",
+    "main.83c5fabe.js.map": "/static/js/main.83c5fabe.js.map"
   },
   "entrypoints": [
-    "static/css/main.99cd8c7e.css",
-    "static/js/main.c76e2bbc.js"
+    "static/css/main.8fbefcdf.css",
+    "static/js/main.83c5fabe.js"
   ]
 }

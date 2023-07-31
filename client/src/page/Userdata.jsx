@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import styles from "./Userdata.module.css";
 import logo from "../assests/png-03.png";
 import { useNavigate } from "react-router-dom";
+import Header from "../component/Header";
 import axios from "axios";
+import Footer from "../component/Footer";
 
-const host = "http://localhost:4000";
+const host = "https://gold-cricket-garb.cyclic.app";
+// const host = "http://localhost:4000";
 
 const initialUserInput = {
   name: "",
@@ -46,6 +49,7 @@ const Userdata = (props) => {
 
   return (
     <div className={styles.userform}>
+      <Header />
       <div className={styles.logodiv} onClick={changepage}>
 
       </div>
@@ -71,7 +75,7 @@ const Userdata = (props) => {
             value={userInput["companyName"]}
             onChange={(e) => inputChangeHandler("companyName", e.target.value)}
             required
-          />
+            />
         </div>
         <div>
           <label htmlFor="">Designation</label>
@@ -81,7 +85,7 @@ const Userdata = (props) => {
             value={userInput["designation"]}
             onChange={(e) => inputChangeHandler("designation", e.target.value)}
             required
-          />
+            />
         </div>
         <div>
           <label htmlFor="">Email ID</label>
@@ -91,7 +95,7 @@ const Userdata = (props) => {
             value={userInput["email"]}
             onChange={(e) => inputChangeHandler("email", e.target.value)}
             required
-          />
+            />
         </div>
         <div>
           <label htmlFor="">Phone No</label>
@@ -100,7 +104,7 @@ const Userdata = (props) => {
             id="phone"
             value={userInput["phone"]}
             onChange={(e) => inputChangeHandler("phone", e.target.value)}
-          />
+            />
         </div>
         <div className={styles.userform__form_btn}>
           <button className={styles.btn} type="submit">
@@ -108,6 +112,7 @@ const Userdata = (props) => {
           </button>
         </div>
       </form>
+<Footer/>
     </div>
   );
 };

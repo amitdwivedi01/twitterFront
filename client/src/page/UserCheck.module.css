@@ -1,13 +1,15 @@
 .UserCheck{
-    background: url(../assests/Ipad\ size.png);
+    background: url(../assests/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
     width: 100vw;
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
+    z-index: 999;
+    padding-top: 100px;
 }
 .logodiv{
     position: absolute;
@@ -16,6 +18,11 @@
     width: 16%;
     height: 19%;
     /* background: rgba(255, 0, 0, 0.441); */
+}
+
+.timg{
+    width: 120px;
+    object-fit: contain;
 }
 
 .logodiv:hover{
@@ -51,8 +58,13 @@
 .usercheck__form{
     display: flex;
 }
+
+.UserCheck__title{
+    text-align: center;
+    /* margin-top: 100px; */
+}
 .btn{
-    margin-top: 50px;
+    margin-top: 10px;
     /* margin-left: 100px; */
     background-color: #252525;
     color: #fff;
@@ -62,4 +74,5 @@
     height: 40px;
     font-size: 16px;
     border-radius: 10px;
+    z-index: 999;
 }
