@@ -5,6 +5,9 @@ import { useNavigate } from "react-router-dom";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 // import styles from './Feedback.module.css'
+const host = "https://gold-cricket-garb.cyclic.app";
+// const host = "http://localhost:4000";
+
 const Feedback = () => {
       const [feedback, setFeedback] = useState("");
   const navigate = useNavigate();
@@ -17,7 +20,7 @@ const Feedback = () => {
         setFeedback("")
         navigate("/thankyou");
         axios
-          .post("https://gold-cricket-garb.cyclic.app/submitFeedback", {
+          .post(`${host}/submitFeedback`, {
             feedback,
           })
           .then((response) => {

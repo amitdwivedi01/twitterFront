@@ -33,6 +33,9 @@ const UserCheck = (props) => {
     others: "",
     email: props.data.email,
     name: props.data.name,
+    companyName: props.data.companyName,
+    designation: props.data.designation,
+    phone: props.data.phone,
   });
   const navigate = useNavigate();
 

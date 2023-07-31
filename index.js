@@ -18,30 +18,30 @@ mongoose
   .then(() => console.log("DB connected"))
   .catch((err) => console.log(err));
 
-const userSchema = new mongoose.Schema({
-  name: String,
-  companyname: String,
-  designation: String,
-  email: String,
-  phone: Number,
-});
+// const userSchema = new mongoose.Schema({
+//   name: String,
+//   companyname: String,
+//   designation: String,
+//   email: String,
+//   phone: Number,
+// });
 
-const User = mongoose.model("User", userSchema);
+// const User = mongoose.model("User", userSchema);
 
-app.post("/api/user", async (req, res) => {
-  try {
-    const userData = req.body;
-    await User.create({
-      name: userData.name,
-      companyname: userData.companyName,
-      designation: userData.designation,
-      email: userData.email,
-      phone: userData.phone,
-    });
-  } catch (err) {
-    console.log(err);
-  }
-});
+// app.post("/api/user", async (req, res) => {
+//   try {
+//     const userData = req.body;
+//     await User.create({
+//       name: userData.name,
+//       companyname: userData.companyName,
+//       designation: userData.designation,
+//       email: userData.email,
+//       phone: userData.phone,
+//     });
+//   } catch (err) {
+//     console.log(err);
+//   }
+// });
 
 const userCheckSchema = new mongoose.Schema({
   meal: Boolean,
@@ -58,6 +58,9 @@ const userCheckSchema = new mongoose.Schema({
   otherText: String,
   email: String,
   name: String,
+  companyname: String,
+  designation: String,
+  phone: String,
 });
 
 const Usercheck = mongoose.model("Checkbox", userCheckSchema);
@@ -81,6 +84,9 @@ app.post("/api/userchoice", async (req, res) => {
       otherText: userDataChoice.others,
       email: userDataChoice.email,
       name: userDataChoice.name,
+      companyname: userDataChoice.companyName,
+      designation: userDataChoice.designation,
+      phone: userDataChoice.phone,
     });
   } catch (err) {
     console.log(err);

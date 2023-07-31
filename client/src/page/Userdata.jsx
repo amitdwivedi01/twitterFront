@@ -27,13 +27,13 @@ const Userdata = (props) => {
     navigate("/usercheck");
     console.log(userInput)
 
-    props.userData({email: userInput["email"], name: userInput["name"]});
+    props.userData({email: userInput["email"], name: userInput["name"], companyName: userInput["companyName"], designation: userInput["designation"], phone: userInput["phone"]});
 
-    try{
-      await axios.post(`${host}/api/user`, userInput);
-    } catch (error) {
-      console.log(error);
-    }
+    // try{
+    //   await axios.post(`${host}/api/user`, userInput);
+    // } catch (error) {
+    //   console.log(error);
+    // }
   };
 
   const changepage = () => {
