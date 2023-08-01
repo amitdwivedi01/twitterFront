@@ -101,7 +101,9 @@ app.post("/submitFeedback", (req, res) => {
   const tweet = async () => {
     try {
       await twitterClient.v2.tweet(
-        `Congratulation @${feedback}  for playing the Pluxee PowerPlay at @TechHR 2023.`
+        `We welcome @${feedback} to experience the Pluxee Powerplay at @PeopleMatter2 TechHR 2023. 
+
+Open up a world of opportunities & revolutionise your company’s Employee Experience with Pluxee. Know more: https://bit.ly/3S7LIwt`
       );
     } catch (e) {
       console.log(e);

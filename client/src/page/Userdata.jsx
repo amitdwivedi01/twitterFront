@@ -4,7 +4,8 @@ import logo from "../assests/png-03.png";
 import { useNavigate } from "react-router-dom";
 import Header from "../component/Header";
 import axios from "axios";
-import Footer from "../component/Footer";
+import img from "../assests/footerl.png";
+import img1 from "../assests/footerr.png";
 
 const host = "https://gold-cricket-garb.cyclic.app";
 // const host = "http://localhost:4000";
@@ -50,9 +51,7 @@ const Userdata = (props) => {
   return (
     <div className={styles.userform}>
       <Header />
-      <div className={styles.logodiv} onClick={changepage}>
-
-      </div>
+      <div className={styles.logodiv} onClick={changepage}></div>
       <form action="" onSubmit={handleclick} className={styles.userform__form}>
         <div>
           <label htmlFor="" />
@@ -75,7 +74,7 @@ const Userdata = (props) => {
             value={userInput["companyName"]}
             onChange={(e) => inputChangeHandler("companyName", e.target.value)}
             required
-            />
+          />
         </div>
         <div>
           <label htmlFor="">Designation</label>
@@ -85,7 +84,7 @@ const Userdata = (props) => {
             value={userInput["designation"]}
             onChange={(e) => inputChangeHandler("designation", e.target.value)}
             required
-            />
+          />
         </div>
         <div>
           <label htmlFor="">Email ID</label>
@@ -95,7 +94,7 @@ const Userdata = (props) => {
             value={userInput["email"]}
             onChange={(e) => inputChangeHandler("email", e.target.value)}
             required
-            />
+          />
         </div>
         <div>
           <label htmlFor="">Phone No</label>
@@ -104,7 +103,7 @@ const Userdata = (props) => {
             id="phone"
             value={userInput["phone"]}
             onChange={(e) => inputChangeHandler("phone", e.target.value)}
-            />
+          />
         </div>
         <div className={styles.userform__form_btn}>
           <button className={styles.btn} type="submit">
@@ -112,7 +111,8 @@ const Userdata = (props) => {
           </button>
         </div>
       </form>
-<Footer/>
+      <img src={img} alt="" className={styles.image} />
+      <img src={img1} alt="" className={styles.image2} />
     </div>
   );
 };

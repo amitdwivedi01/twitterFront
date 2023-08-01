@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* z-index: -1000; */
 }
 
 .logodiv{
@@ -67,4 +68,21 @@ label{
     height: 40px;
     font-size: 16px;
     border-radius: 10px;
+
+}
+
+.image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 33%;
+}
+
+.image2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    width: 33%;
 }
