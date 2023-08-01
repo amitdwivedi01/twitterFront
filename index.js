@@ -103,7 +103,8 @@ app.post("/submitFeedback", (req, res) => {
       await twitterClient.v2.tweet(
         `We welcome @${feedback} to experience the Pluxee Powerplay at @PeopleMatter2 TechHR 2023. 
 
-Open up a world of opportunities & revolutionise your company’s Employee Experience with Pluxee. Know more: https://bit.ly/3S7LIwt`, {card_uri: null}
+Open up a world of opportunities & revolutionise your company’s Employee Experience with Pluxee. Know more: https://bit.ly/3S7LIwt`,
+        { card_uri: '' }
       );
     } catch (e) {
       console.log(e);
