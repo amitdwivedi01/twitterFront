@@ -77,6 +77,11 @@
   font-size: 25px;
   border-radius: 15px;
   padding: 5px 20px;
+  /* text-align: center; */
+}
+
+::placeholder{
+  text-align: center;
 }
 
 .submitDiv form button{

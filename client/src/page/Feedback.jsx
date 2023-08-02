@@ -60,7 +60,7 @@ const Feedback = () => {
           onChange={handleInputChange}
           rows="1"
           cols="50"
-          placeholder="Please enter your twitter handle..."
+          placeholder="Please enter your X username (Twitter handle)..."
           required
         ></textarea>
         <br />

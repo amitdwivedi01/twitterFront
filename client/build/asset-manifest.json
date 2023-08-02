@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d434c51c.css",
-    "main.js": "/static/js/main.907a54b5.js",
+    "main.css": "/static/css/main.74af95f0.css",
+    "main.js": "/static/js/main.8ac5704a.js",
     "static/media/png-03.png": "/static/media/png-03.5e01fd8ee3823d4111ce.png",
     "static/media/TT_Travels_Bold.woff": "/static/media/TT_Travels_Bold.6bc6555a6955e0365673.woff",
     "static/media/footerl.png": "/static/media/footerl.2d384ff206f0dd0d9f3c.png",
@@ -9,11 +9,11 @@
     "static/media/footerr.png": "/static/media/footerr.e2661254cb8b9841cb47.png",
     "static/media/logo.png": "/static/media/logo.b12ed3e03f685401a002.png",
     "index.html": "/index.html",
-    "main.d434c51c.css.map": "/static/css/main.d434c51c.css.map",
-    "main.907a54b5.js.map": "/static/js/main.907a54b5.js.map"
+    "main.74af95f0.css.map": "/static/css/main.74af95f0.css.map",
+    "main.8ac5704a.js.map": "/static/js/main.8ac5704a.js.map"
   },
   "entrypoints": [
-    "static/css/main.d434c51c.css",
-    "static/js/main.907a54b5.js"
+    "static/css/main.74af95f0.css",
+    "static/js/main.8ac5704a.js"
   ]
 }
