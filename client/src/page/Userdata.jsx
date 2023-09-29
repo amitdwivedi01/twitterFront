@@ -7,12 +7,12 @@ import axios from "axios";
 import img from "../assests/footerl.png";
 import img1 from "../assests/footerr.png";
 
-const host = "https://gold-cricket-garb.cyclic.app";
-// const host = "http://localhost:4000";
+// const host = "https://gold-cricket-garb.cyclic.app";
+const host = "http://localhost:4000";
 
 const initialUserInput = {
   name: "",
-  companyName: "",
+  organizationName: "",
   designation: "",
   email: "",
   phone: "",
@@ -25,10 +25,21 @@ const Userdata = (props) => {
 
   const handleclick = async (e) => {
     e.preventDefault();
-    navigate("/usercheck");
-    console.log(userInput)
+    // navigate("/usercheck");
+    console.log(userInput);
 
-    props.userData({email: userInput["email"], name: userInput["name"], companyName: userInput["companyName"], designation: userInput["designation"], phone: userInput["phone"]});
+    try {
+      const response = await axios.post(`${host}/api/userchoice`, userInput);
+      console.log(response);
+      if (response.status === 200){
+        navigate("/feedback");
+        setUserInput(initialUserInput);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+
+    // props.userData({email: userInput["email"], name: userInput["name"], companyName: userInput["companyName"], designation: userInput["designation"], phone: userInput["phone"]});
 
     // try{
     //   await axios.post(`${host}/api/user`, userInput);
@@ -39,8 +50,7 @@ const Userdata = (props) => {
 
   const changepage = () => {
     navigate("/");
-  }
-
+  };
 
   const inputChangeHandler = (input, value) => {
     setUserInput((prevState) => {
@@ -67,12 +77,14 @@ const Userdata = (props) => {
           />
         </div>
         <div>
-          <label htmlFor="">Company Name</label>
+          <label htmlFor="">Organization Name</label>
           <input
             type="text"
-            id="companyName"
-            value={userInput["companyName"]}
-            onChange={(e) => inputChangeHandler("companyName", e.target.value)}
+            id="organizationName"
+            value={userInput["organizationName"]}
+            onChange={(e) =>
+              inputChangeHandler("organizationName", e.target.value)
+            }
             required
           />
         </div>

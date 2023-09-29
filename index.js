@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const mongoURI =
-  "mongodb+srv://admin:admin456123@cluster0.mnvp6el.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://pluxee:pluxee@cluster0.qxmonki.mongodb.net/?retryWrites=true&w=majority";
 mongoose
   .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("DB connected"))
@@ -44,21 +44,21 @@ mongoose
 // });
 
 const userCheckSchema = new mongoose.Schema({
-  meal: Boolean,
-  reward: Boolean,
-  fuel: Boolean,
-  health: Boolean,
-  telecom: Boolean,
-  leave: Boolean,
-  gadget: Boolean,
-  drive: Boolean,
-  uniform: Boolean,
-  learn: Boolean,
-  other: Boolean,
-  otherText: String,
+  // meal: Boolean,
+  // reward: Boolean,
+  // fuel: Boolean,
+  // health: Boolean,
+  // telecom: Boolean,
+  // leave: Boolean,
+  // gadget: Boolean,
+  // drive: Boolean,
+  // uniform: Boolean,
+  // learn: Boolean,
+  // other: Boolean,
+  // otherText: String,
   email: String,
   name: String,
-  companyname: String,
+  organizationName: String,
   designation: String,
   phone: String,
 });
@@ -70,24 +70,25 @@ app.post("/api/userchoice", async (req, res) => {
     const userDataChoice = req.body;
     console.log(userDataChoice);
     await Usercheck.create({
-      meal: userDataChoice.meal,
-      fuel: userDataChoice.fuel,
-      reward: userDataChoice.reward,
-      health: userDataChoice.health,
-      telecom: userDataChoice.telecom,
-      leave: userDataChoice.leave,
-      gadget: userDataChoice.gadget,
-      drive: userDataChoice.drive,
-      uniform: userDataChoice.uniform,
-      learn: userDataChoice.learn,
-      other: userDataChoice.other,
-      otherText: userDataChoice.others,
+      // meal: userDataChoice.meal,
+      // fuel: userDataChoice.fuel,
+      // reward: userDataChoice.reward,
+      // health: userDataChoice.health,
+      // telecom: userDataChoice.telecom,
+      // leave: userDataChoice.leave,
+      // gadget: userDataChoice.gadget,
+      // drive: userDataChoice.drive,
+      // uniform: userDataChoice.uniform,
+      // learn: userDataChoice.learn,
+      // other: userDataChoice.other,
+      // otherText: userDataChoice.others,
       email: userDataChoice.email,
       name: userDataChoice.name,
-      companyname: userDataChoice.companyName,
+      organizationName: userDataChoice.organizationName,
       designation: userDataChoice.designation,
       phone: userDataChoice.phone,
     });
+    res.status(200).json({ message: "success" });
   } catch (err) {
     console.log(err);
   }
@@ -113,6 +114,6 @@ Drop by to try it first-hand & see how Pluxee opens up a #WorldOfOpportunities f
   tweet();
 });
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server is listening on port ${process.env.PORT}`);
+app.listen(4000, () => {
+  console.log(`Server is listening on port ${4000}`);
 });

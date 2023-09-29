@@ -7,8 +7,8 @@ import Header from "../component/Header";
 import img from "../assests/footerl.png";
 import img1 from "../assests/footerr.png";
 // import styles from './Feedback.module.css'
-const host = "https://gold-cricket-garb.cyclic.app";
-// const host = "http://localhost:4000";
+// const host = "https://gold-cricket-garb.cyclic.app";
+const host = "http://localhost:4000";
 
 const Feedback = () => {
   const [feedback, setFeedback] = useState("");
