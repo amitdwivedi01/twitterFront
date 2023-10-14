@@ -13,8 +13,8 @@ import learn from "../assests/learning2.png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Header from "../component/Header";
-import img from "../assests/footerl.png";
-import img1 from "../assests/footerr.png";
+import img from "../assests/kids.png";
+import img1 from "../assests/kids2.png";
 const host = "https://gold-cricket-garb.cyclic.app";
 // const host = "http://localhost:4000";
 

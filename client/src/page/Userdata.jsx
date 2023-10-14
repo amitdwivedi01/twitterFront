@@ -4,11 +4,12 @@ import logo from "../assests/png-03.png";
 import { useNavigate } from "react-router-dom";
 import Header from "../component/Header";
 import axios from "axios";
-import img from "../assests/footerl.png";
-import img1 from "../assests/footerr.png";
+import img from "../assests/kids.png";
+import img1 from "../assests/kids2.png";
 
 // const host = "https://gold-cricket-garb.cyclic.app";
-const host = "http://localhost:4000";
+// const host = "http://localhost:4000";
+const host = "https://good-blue-drill-gown.cyclic.cloud";
 
 const initialUserInput = {
   name: "",
@@ -27,12 +28,12 @@ const Userdata = (props) => {
     e.preventDefault();
     // navigate("/usercheck");
     console.log(userInput);
+    navigate("/feedback");
 
     try {
       const response = await axios.post(`${host}/api/userchoice`, userInput);
       console.log(response);
-      if (response.status === 200){
-        navigate("/feedback");
+      if (response.status === 200) {
         setUserInput(initialUserInput);
       }
     } catch (error) {
@@ -63,10 +64,7 @@ const Userdata = (props) => {
       <Header />
       <div className={styles.logodiv} onClick={changepage}></div>
       <form action="" onSubmit={handleclick} className={styles.userform__form}>
-        <div>
-          <label htmlFor="" />
-        </div>
-        <div>
+        <div className={`${styles.userdataformsubdiv}`}>
           <label htmlFor="">Name</label>
           <input
             type="text"
@@ -76,7 +74,7 @@ const Userdata = (props) => {
             required
           />
         </div>
-        <div>
+        <div className={`${styles.userdataformsubdiv}`}>
           <label htmlFor="">Organization Name</label>
           <input
             type="text"
@@ -88,7 +86,7 @@ const Userdata = (props) => {
             required
           />
         </div>
-        <div>
+        <div className={`${styles.userdataformsubdiv}`}>
           <label htmlFor="">Designation</label>
           <input
             type="text"
@@ -98,7 +96,7 @@ const Userdata = (props) => {
             required
           />
         </div>
-        <div>
+        <div className={`${styles.userdataformsubdiv}`}>
           <label htmlFor="">Email ID</label>
           <input
             type="email"
@@ -108,7 +106,7 @@ const Userdata = (props) => {
             required
           />
         </div>
-        <div>
+        <div className={`${styles.userdataformsubdiv}`}>
           <label htmlFor="">Phone No</label>
           <input
             type="number"

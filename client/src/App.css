@@ -77,6 +77,8 @@
   font-size: 25px;
   border-radius: 15px;
   padding: 5px 20px;
+  width: 96vw;
+  max-width: 500px;
   /* text-align: center; */
 }
 
@@ -85,8 +87,8 @@
 }
 
 .submitDiv form button{
-  margin-top: 20px;
-  margin-left: 35%;
+  /* margin-top: 20px;
+  margin-left: 35%; */
   background-color: #0b073b;
   color: antiquewhite;
   padding: 10px 40px;

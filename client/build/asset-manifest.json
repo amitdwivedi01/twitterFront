@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.5273825e.css",
-    "main.js": "/static/js/main.92b9fb74.js",
+    "main.css": "/static/css/main.3bbc9134.css",
+    "main.js": "/static/js/main.17ab0dca.js",
     "static/media/png-03.png": "/static/media/png-03.5e01fd8ee3823d4111ce.png",
+    "static/media/kids.png": "/static/media/kids.e57adfdc1fb35ec0c296.png",
     "static/media/TT_Travels_Bold.woff": "/static/media/TT_Travels_Bold.6bc6555a6955e0365673.woff",
-    "static/media/footerl.png": "/static/media/footerl.2d384ff206f0dd0d9f3c.png",
+    "static/media/kids2.png": "/static/media/kids2.7d2801601d879bf4ec7f.png",
     "static/media/logoright.png": "/static/media/logoright.f2917dec8beda5d98f07.png",
-    "static/media/footerr.png": "/static/media/footerr.e2661254cb8b9841cb47.png",
     "static/media/logo.png": "/static/media/logo.b12ed3e03f685401a002.png",
     "index.html": "/index.html",
-    "main.5273825e.css.map": "/static/css/main.5273825e.css.map",
-    "main.92b9fb74.js.map": "/static/js/main.92b9fb74.js.map"
+    "main.3bbc9134.css.map": "/static/css/main.3bbc9134.css.map",
+    "main.17ab0dca.js.map": "/static/js/main.17ab0dca.js.map"
   },
   "entrypoints": [
-    "static/css/main.5273825e.css",
-    "static/js/main.92b9fb74.js"
+    "static/css/main.3bbc9134.css",
+    "static/js/main.17ab0dca.js"
   ]
 }

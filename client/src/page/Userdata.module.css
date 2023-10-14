@@ -38,6 +38,8 @@
 
 label{
     margin-right: 10px;
+    color: #0b073b;
+    font-size: 20px;
 }
 
 .userform__form input{
@@ -60,14 +62,22 @@ label{
 .btn{
     margin-top: 50px;
     /* margin-left: 100px; */
-    background-color: #252525;
+    /* background-color: #252525;
     color: #fff;
     border: none;
     outline: none;
     width: 100px;
     height: 40px;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 10px; */
+      background-color: #0b073b;
+  color: antiquewhite;
+  padding: 10px 40px;
+  font-size: 30px;
+  font-weight: 500;
+  border-radius: 7px;
+  border: none;
+  letter-spacing: 1.5px;
 
 }
 
@@ -85,4 +95,11 @@ label{
     right: 0;
     height: auto;
     width: 33%;
+}
+
+@media screen and (max-width: 550px) {
+    .userdataformsubdiv{
+        display: flex;
+        flex-direction: column;
+    }
 }

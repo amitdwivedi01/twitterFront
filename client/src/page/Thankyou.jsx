@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Thankyou.module.css";
 import Header from '../component/Header';
 // import Footer from '../component/Footer';
-import img from "../assests/footerl.png";
-import img1 from "../assests/footerr.png";
+import img from "../assests/kids.png";
+import img1 from "../assests/kids2.png";
 
 const Thankyou = () => {
   const navigate = useNavigate();
