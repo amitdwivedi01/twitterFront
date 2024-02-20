@@ -15,8 +15,8 @@ import axios from "axios";
 import Header from "../component/Header";
 import img from "../assests/kids.png";
 import img1 from "../assests/kids2.png";
-const host = "https://gold-cricket-garb.cyclic.app";
-// const host = "http://localhost:4000";
+// const host = "https://gold-cricket-garb.cyclic.app";
+const host = "http://localhost:4000";
 
 const UserCheck = (props) => {
   const [selectedItems, setSelectedItems] = useState({

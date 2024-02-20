@@ -4,12 +4,12 @@ import logo from "../assests/png-03.png";
 import { useNavigate } from "react-router-dom";
 import Header from "../component/Header";
 import axios from "axios";
-import img from "../assests/kids.png";
-import img1 from "../assests/kids2.png";
+import img from "../assests/png-055.png";
+import img1 from "../assests/png-066.png";
 
 // const host = "https://gold-cricket-garb.cyclic.app";
-// const host = "http://localhost:4000";
-const host = "https://good-blue-drill-gown.cyclic.cloud";
+const host = "http://localhost:4000";
+// const host = "https://good-blue-drill-gown.cyclic.cloud";
 
 const initialUserInput = {
   name: "",
