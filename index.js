@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const mongoURI =
-  "mongodb+srv://amitdwivedi0205:amit123@cluster0.e7vstzv.mongodb.net/?retryWrites=true&w=majority";
+  process.env.DB_URI;
 mongoose
   .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("DB connected"))

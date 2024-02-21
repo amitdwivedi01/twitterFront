@@ -13,10 +13,10 @@ import learn from "../assests/learning2.png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Header from "../component/Header";
-import img from "../assests/kids.png";
-import img1 from "../assests/kids2.png";
-// const host = "https://gold-cricket-garb.cyclic.app";
-const host = "http://localhost:4000";
+import img from "../assests/png-055.png";
+import img1 from "../assests/png-066.png";
+const host = "https://gold-cricket-garb.cyclic.app";
+// const host = "http://localhost:4000";
 
 const UserCheck = (props) => {
   const [selectedItems, setSelectedItems] = useState({
