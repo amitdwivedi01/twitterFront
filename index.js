@@ -102,7 +102,9 @@ app.post("/submitFeedback", (req, res) => {
   const tweet = async () => {
     try {
       await twitterClient.v2.tweet(
-        `We were excited that @${feedback} visited us and participated in #PluxeePowerplay and experienced live motion sensing at @DidacIndia.Drop by to try it first-hand & see how Pluxee opens up a #WorldOfOpportunities for you.🔗https://tinyurl.com/34jqsd`
+        `We were excited that @${feedback} visited the #Pluxee booth at @CIIEvents #TheHRConclave2024 & participated in #PluxeePowerplay and experienced the live motion sensing game.
+
+        Drop by to try the game first-hand and open a #WorldOfOpportunities here 🔗https://tinyurl.com/34jqsd`
       );
     } catch (e) {
       console.log(e);
